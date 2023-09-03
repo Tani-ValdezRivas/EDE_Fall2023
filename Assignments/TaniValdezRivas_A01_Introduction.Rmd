@@ -47,7 +47,7 @@ Enter answers to the questions just below the >Answer: prompt.
 
 3. Are there any components of the course about which you feel apprehensive?
 
-> Answer: In total honesty, the rest of my course makes me feel wary. For assignment one: task 2, I was confused if I needed to download the .rmd file in my Git repository or on R. Being this is my first time using R, my brain is slightly struggling on the pull and push components of R. As I look through the syallbus, I feel hesitant on some of the topics as I have primarily used exccel. But, as I keep exploring R and try to figure out some the commands and tools, I'm slowly feeling more sure of myself.
+> Answer: In total honesty, the rest of my course makes me feel wary. For assignment one: task 2, I was confused if I needed to download the .rmd file in my Git repository or on R. Being this is my first time using R, my brain is slightly struggling on the pull and push components of R. As I look through the syallbus, I feel hesitant on some of the topics as I have primarily used exccel. But, as I keep exploring R and try to figure out some the commands and tools, I'm slowly feeling more sure of myself.  test 
 
 
 ## 3) GitHub
