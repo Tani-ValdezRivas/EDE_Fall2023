@@ -30,13 +30,27 @@ This exercise accompanies the lessons in Environmental Data Analytics on coding 
 
 4.  Insert comments in your code to describe what you are doing.
 
-```{r basics 1}
-#1. 
+```{r basic 1}
+#1.
+
+seq(1, 30, 3) # Establishing that the sequence is starting at one, increasing by 3s until it reaches 30.
+seq_to_thirty <- seq(1, 30, 3)
+seq_to_thirty
 
 #2. 
 
+mean_seq <- mean(seq_to_thirty) # Summary statistics can help calculate the mean and median of a data set
+median_seq <- median(seq_to_thirty)
+mean_seq
+median_seq
+
 #3. 
 
+
+mean_or_median_greater = function(mean_seq) {
+  
+  if (mean_seq > median_seq)
+}
 ```
 
 ## Basics, Part 2
@@ -50,6 +64,8 @@ This exercise accompanies the lessons in Environmental Data Analytics on coding 
 8.  Label the columns of your data frame with informative titles.
 
 ```{r basics 2}
+
+data()
 
 ```
 
