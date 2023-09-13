@@ -47,10 +47,9 @@ median_seq
 #3. 
 
 
-mean_or_median_greater = function(mean_seq) {
-  
-  if (mean_seq > median_seq)
-}
+mean_seq > median_seq # Asking if the mean is greater than the median
+
+
 ```
 
 ## Basics, Part 2
@@ -108,6 +107,8 @@ A data frame is another data structure that can contain various types of data an
 11. Apply your function to the vector with test scores that you created in number 5.
 
 ```{r basics 3}
+
+
 
 ```
 
