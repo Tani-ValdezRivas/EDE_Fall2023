@@ -117,7 +117,7 @@ Student_Scores <- function(Scores){ # Writing the function
 }
 
 Student_Passed <- Student_Scores(Scores) # Determines if students received a passing grade
-Student_Passed
+Student_Passed 
 ```
 
 12. QUESTION: Which option of `if` and `else` vs. `ifelse` worked? Why? 
