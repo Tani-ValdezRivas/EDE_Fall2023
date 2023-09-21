@@ -118,8 +118,8 @@ or not random.
 
 ```{r Dimensions}
 
-# Dimensions using summary ()
-summary(Neonics)
+# Finding the dimensions using dim() function
+dim(Neonics)
 
 ```
 
@@ -192,7 +192,7 @@ ggplot(Neonics) +
 
 ```{r Creating a frequency line graph and differentiating by location}
 
-# Installing ggplot as my plots were not visible 
+# Installing ggplot2 as my plots were not visible 
 install.packages("ggplot2")
 library(ggplot2)
 
