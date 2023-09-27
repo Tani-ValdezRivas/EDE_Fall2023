@@ -116,8 +116,6 @@ EPAair.PM25.NC2019.subset <- mutate(EPAair.PM25.NC2019.subset, AQS_PARAMETER_DES
 #6
 
 # Using the write.csv() command to save processed data
-here()
-
 write.csv(EPAair.O3.NC2018.subset, row.names = FALSE, 
           file ="./Data/Processed/EPAair_O3_NC2018_Processed.csv")
 write.csv(EPAair.O3.NC2019.subset, row.names = FALSE, 
