@@ -237,4 +237,6 @@ Nitwot_Needles_DryMass_Date_2
 ```
 Question: Which of these plots (6 vs. 7) do you think is more effective, and why? 
 
-> Answer:
+> Answer: Plot 7 is more effective than plot 6. In plot 7, the range of the dry mass
+for each NLCD class is more noticeable and it is more legible. Plot 6 is more crowded
+and it is difficult to see the distribution of data. 
