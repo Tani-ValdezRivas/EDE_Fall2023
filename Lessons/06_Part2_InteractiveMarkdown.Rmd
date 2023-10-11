@@ -15,7 +15,11 @@ RMarkdown is a powerful tool for creating dynamic documents that combine code, t
 
 ### Set up the coding environment
 ```{r setup, echo=FALSE, warning=FALSE, message=FALSE}
-#Load packages
+
+# note for myself- runtime: shiny to make it interactive 
+
+
+#Load packages 
 library(tidyverse);library(here);library(lubridate)
 
 #Load data
