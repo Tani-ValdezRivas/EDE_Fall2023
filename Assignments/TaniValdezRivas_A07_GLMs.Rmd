@@ -37,13 +37,12 @@ library(here)
 here()
 
 # Importing raw data
-NTL_LTER_Data <- read.csv(here('Data','Raw','NTL-LTER_Lake_ChemistryPhysics_Raw.csv'), stringsAsFactors = TRUE)
-
+NTL_LTER_Data <- read.csv(here('Data','Raw','NTL-LTER_Lake_ChemistryPhysics_Raw.csv'), 
+                          stringsAsFactors = TRUE)
 
 #2
 
 # Building ggplot themes
-
 mytheme <- theme_gray(base_size = 12) +
   theme(axis.title = element_text(color = "black"), 
           legend.position = "right",
@@ -59,8 +58,8 @@ Our first research question is: Does mean lake temperature recorded during July 
 
 3. State the null and alternative hypotheses for this question:
 > Answer:
-H0: Lake temperature does not changes with depth.
-Ha: Lake temperature does change with depth.
+H0: Lake temperature does not significantlly change with depth.
+Ha: Lake temperature does significantlly change with depth.
 
 
 4.  Wrangle your NTL-LTER dataset with a pipe function so that the records meet the following criteria: 
@@ -73,9 +72,7 @@ Ha: Lake temperature does change with depth.
 ```{r scatterplot}
 #4
 
-# Formatting date 
-
-# Coverting to date format
+# Converting to date format
 NTL_LTER_Data$sampledate <- mdy(NTL_LTER_Data$sampledate)
 
 # Transforming data to separate data column ~ looked up online to solve this
@@ -126,7 +123,6 @@ remain constant between 4C and 6c.
 #7
 
 # Using the lm() function to perform linear regression between temperature_C and depth
-
 Temp_by_depth_regression <- lm(data = July_NTL_LTER_Data,
                                temperature_C ~ depth)
 summary(Temp_by_depth_regression)
