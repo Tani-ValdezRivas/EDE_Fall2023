@@ -314,7 +314,7 @@ to conduct contiunous studies and monitoring to learn the adverse effects.
 
 #Using the decomposed time series object to subtract the seasonal component
 GaringerOzone.monthly_Components <- 
-  as.data.frame(MonthlyGaringerOzone_Decompose$time.series[,1:3])
+  as.data.frame(MonthlyGaringerOzone_Decompose$time.series[,1:3]) 
  
  nonseasonal_GaringerOzone.monthly.ts <- 
    GaringerOzone.monthly.ts - GaringerOzone.monthly_Components$seasonal
