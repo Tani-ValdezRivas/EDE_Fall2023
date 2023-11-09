@@ -11,7 +11,7 @@ editor_options:
 ## Objectives
 1. Discuss the purpose and application of time series analysis for environmental data
 2. Explore the components of times series: trend, seasonal, random
-3. Learn how to perform stationarity test
+3. Learn how to perform stationarity test - want it close to 0?
 
 ## Set up
 

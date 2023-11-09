@@ -53,7 +53,6 @@ Temp_BR <- read.csv(here("Data/Raw/tas_1901_2016_BRA.csv"), stringsAsFactors = T
 #a Rename the column with Rainfall to get rid of the dots.
 #b Note that on both data sets that is a column with the month name and average. Convert it to a Month column by separating the string, i.e., month in one column and the word "Average" on another. Hint: use the separate() function in the pipe.
 #c Now you should have a column with Month. Use the paste0() function to paste month and year together and create a date object.
-#d Select only the columns of interest: Date and rainfall
 
 Rainfall_BR_processed <-
   Rainfall_BR %>% 
