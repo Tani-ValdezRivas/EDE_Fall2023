@@ -1,6 +1,6 @@
 ---
 title: "Assignment 9: Spatial Analysis in R"
-author: "Tani Valdez Rivas"
+author: "Tani Valdez Rivas" 
 output: html_document
 ---
 
