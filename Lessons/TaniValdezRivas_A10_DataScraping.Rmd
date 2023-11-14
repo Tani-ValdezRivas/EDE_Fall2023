@@ -267,4 +267,4 @@ Asheville_2010_2021_plot
 Question: Just by looking at the plot (i.e. not running statistics), does Asheville have a trend in water usage over time?
 > Answer:
 > From 2010 to 2018, the maximum day usage remained constant. But from 2019 and on,
-> water usage increased, with the peak occuring between 2019 and 2020.  
+> water usage increased, with the peak occuring between 2019 and 2020.   
