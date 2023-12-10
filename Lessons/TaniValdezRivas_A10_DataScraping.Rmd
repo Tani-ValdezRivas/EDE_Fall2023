@@ -50,7 +50,8 @@ Indicate this website as the as the URL to be scraped. (In other words, read the
 #2 
 
 # Using the read_html() to read the contents
-NCDEQ_Web <- read_html('https://www.ncwater.org/WUDC/app/LWSP/report.php?pwsid=03-32-010&year=2022')
+NCDEQ_Web <- 
+  read_html('https://www.ncwater.org/WUDC/app/LWSP/report.php?pwsid=03-32-010&year=2022')
 NCDEQ_Web
 
 
@@ -116,7 +117,8 @@ max_monthly_MGD
 #4 
 
 # Creating Month and year
-Months <- c("Jan", "May", "Sep", "Feb", "Jun", "Oct", "Mar", "Jul", "Nov", "Apr", "Aug", "Dec")
+Months <- c("Jan", "May", "Sep", "Feb", "Jun", "Oct", 
+            "Mar", "Jul", "Nov", "Apr", "Aug", "Dec")
 Year <- 2022
 
 # Using the data.frame function to scrap data into data frame
@@ -127,6 +129,7 @@ df_NCDEQ <- data.frame(Month = rep(Months, each = 1),
          PWSID = !!the_PWSID,
          Ownership = !!the_ownership,
          Date = my(paste(Month,"-",Year)))
+df_NCDEQ
 
 #5 
 
@@ -215,7 +218,7 @@ view(Asheville2015)
 
 # Combining Asheville and Durham 2015 data
 AshevilleDurham2015 <- bind_rows(Durham2015, Asheville2015)
-
+AshevilleDurham2015
 
 # Creating ggplot for Durham and Asheville's water withdrawls
 AshevilleDurham2015Plot <- 
@@ -265,6 +268,5 @@ Asheville_2010_2021_plot
 ```
 
 Question: Just by looking at the plot (i.e. not running statistics), does Asheville have a trend in water usage over time?
-> Answer:
-> From 2010 to 2018, the maximum day usage remained constant. But from 2019 and on,
+> Answer: From 2010 to 2018, the maximum day usage remained constant. But from 2019 and on,
 > water usage increased, with the peak occuring between 2019 and 2020.   

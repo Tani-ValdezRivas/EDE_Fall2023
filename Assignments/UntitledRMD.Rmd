@@ -1,0 +1,45 @@
+
+
+```{r setup, include=FALSE, echo=FALSE, message=FALSE}
+
+#Import the tidyverse library 
+library(tidyverse, quietly = TRUE)
+library(lubridate); library(here)
+
+#install.packages('sf')
+library(sf)
+#install.packages('leaflet')
+library(leaflet)
+library(mapview); mapviewOptions(fgb = FALSE)
+
+# Mapping the locations of the study sites
+
+# Creating a dataframe of the locations
+Site_Name <- c("Mohawk Reef", "Arroyo Quemado Reef", "Arroyo Burro Reef")
+Longitude <- c("-119.7295", "-120.11905", "-119.7445915	")
+Latitude <- c("34.3940708", "34.46774988", "34.400275")
+
+Site_information <- data.frame(Site_Name, Longitude, Latitude)
+
+# Changing Site Name, Longitude, Latitude to factors and numerics
+Site_information$Site_Name <- as.factor(Site_information$Site_Name)
+Site_information$Longitude <- as.numeric(Site_information$Longitude)
+Site_information$Latitude <- as.numeric(Site_information$Latitude)
+
+
+# Converting the dataframe into a spatial reference frame
+Surge_Reef_sf <- Site_information %>% 
+  st_as_sf(coords = c('Longitude','Latitude'),
+           crs=4326)
+
+# Making a map of the study sites
+Surge_Reef_Map <- mapView(Surge_Reef_sf, layer.name = 'Reef Site locations')
+
+
+#Transform the datasets to use UTM 11 N, WGS84
+Surge_reef_sf_utm <- st_transform(Surge_Reef_sf,26911)
+
+Surge_Reef_Map2 <- 
+  ggplot() +
+  geom_sf(data = Surge_reef_sf_utm,color='blue') 
+
